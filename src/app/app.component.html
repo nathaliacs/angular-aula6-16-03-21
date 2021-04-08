@@ -1,0 +1,11 @@
+<hello name="{{ name }}"></hello>
+<a [routerLink]="['']">HOME</a> |
+<a [routerLink]="['tasks']">TASKS</a> |
+<a [routerLink]="['log']">LOG</a> |
+{{timer.getCount()}}s
+
+  <button (click)="timer.start(1000)">Iniciar</button>
+  <button (click)="timer.stop()">Parar</button>
+
+
+<router-outlet></router-outlet>
